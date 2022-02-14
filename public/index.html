@@ -30,6 +30,29 @@
 <li><a href="..">...</a>
 <li><a href="..">...</a>
 <li><a href="..">...</a>
+<input id="myButton131" type="button" value="Extend a class" onclick="{
+class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+                                                             
+class myCat extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv131').innerHTML = this.myName + ' is a amazing cat who lived to be ' + this.myAge + ' years old<br>'
+    }                                                                   
+}    // end extended class myCat
+                                                                     
+                                                              
+                                                                                                                                                                                                       
+   myPet = new myCat('Shadow', 5.5)
+   myPet.myShow()                                                                           
+}"><br><br>
 
+<div id='myDiv131'>...</div><br>
   
 </html>
