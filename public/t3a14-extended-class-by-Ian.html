@@ -9,7 +9,7 @@ classs myAnimal {
 
 </script>
 
-Version 0.0.1 
+Version 0.0.2
 <h2 align=center>t3a14-extended-class-by-Ian.html</h2>
 
 Extending a pre-exising Class<br>
@@ -21,5 +21,40 @@ class myCat extends myAnimal {
   
      myShow(){
        document.getElementById('myDiv01').innerHTML = this.myName
- 
+     }
+}
+
+</pre>
+
+
+<h4> Example working Classes code</h4>
+
+<input type=button value="Example Class Set and Show Class Animal" onClick="{
+
+ myDog = myAnimal('Snickers', 5)
+ myDog.myShow()
+
+}">
+
+<h4> Example extending Class code</h4>
+Nothiing: <input type=text id="myText01" value="Useles at the moment"><br>
+
+<input type=button value="Example Extend Class Animal" onClick="{
+
+ class myCat extends myAnimal {
+
+     myShow(){
+       document.getElementById('myDiv01').innerHTML = this.name + ' is a great cat<br>'
+    }
+}    // end extended class myCat
+
+
+
+
+    myPet = new myCat('Shadow', 14)
+    myPet.myShow()
+                                        
+}">
+
+<div id="myDiv01"> . . . </div>
    
