@@ -56,3 +56,18 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
 <div id="myDiv01">...</div>
 
+<input type=button value="Example Extend Class Brother" onClick="{
+
+ class myBrother extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv01').innerHTML = this.myName + ' is a little shit<br>'
+    }                                                                   
+}    // end extended class myBrother
+                                                                                                                                                                                                                                                                                                                                    
+   myPet = new myBrother('Andrew')
+   myPet.myShow()  
+
+}">
+
+
+<div id="myDiv01">...</div>
