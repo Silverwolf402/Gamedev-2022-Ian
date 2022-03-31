@@ -1,30 +1,29 @@
 <script>
 
-class myAnimal {
-   constructor(passName, passAge) {
-      this.myName = passName;
-      this.myAge = passAge;
-   }
-   myShow(){
-      document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName+'<br>'
-   }
-}  //end class myAnimal
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){    
+       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName+'<br>'
+    }
+ }  // end class myAnimal
 
 </script>
 
-Version 0.0.5
-<h2 align=center>t3a14-extended-class-by-Ian.html</h2>
+Version 0.0.1
+<h2 align=center>t2a04-extend-class-by-fred.html</h2>
 
-Extending a pre-exising Class<br>
+Extending a pre-existing Class<br>
 
-Example Class extend code</h4>
+<h4> Example Class extend code</h4>
 <pre>
 
-class myCat extends myAnimal {
-  
+ class myCat extends myAnimal {                                                                      
      myShow(){
        document.getElementById('myDiv01').innerHTML = this.myName
-     }
+    }                                                                   
 }
 
 </pre>
@@ -34,8 +33,8 @@ class myCat extends myAnimal {
 
 <input type=button value="Example Class Set and Show Class Animal" onClick="{
 
- myDog = myAnimal('Snickers', 5)
- myDog.myShow()
+  myDog = new myAnimal('Snickers', 5)
+  myDog.myShow()  
 
 }">
 
@@ -44,20 +43,16 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
 <input type=button value="Example Extend Class Animal" onClick="{
 
- Class myCat extends myAnimal {
-
+ class myCat extends myAnimal {                                                                      
      myShow(){
        document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat<br>'
-    }
+    }                                                                   
 }    // end extended class myCat
+                                                                                                                                                                                                                                                                                                                                    
+   myPet = new myCat('Fluffy', 14)
+   myPet.myShow()  
 
-
-
-
-    myPet = new myCat('Shadow', 5.5)
-    myPet.myShow()
-                                        
 }">
 
 <div id="myDiv01">...</div>
-   
+
